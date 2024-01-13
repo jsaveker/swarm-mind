@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       chart: postgresql
-      version: 13.2.29
+      version: 12
       sourceRef:
         kind: HelmRepository
         name: bitnami
@@ -29,9 +29,9 @@ spec:
     global:
       postgresql:
         auth:
-          postgresPassword: "${POSTGRES_ADMIN_PASSWORD}"
+          postgresPassword: "admin"
           username: mastodon
-          password: "${POSTGRES_PASSWORD}"
+          password: "fdgsd455ggfg"
           database: mastodon
     image:
       registry: docker.io
