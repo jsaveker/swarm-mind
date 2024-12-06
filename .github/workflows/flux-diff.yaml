@@ -19,7 +19,7 @@ jobs:
         resource: ["helmrelease", "kustomization"]
     steps:
       - name: Diff Resources
-        uses: allenporter/flux-local/action/diff@1c5568b09bdd941ec029312fd44aeffb194ef766 # 5.5.1
+        uses: allenporter/flux-local/action/diff@bfff4ac1f313c2ef82aed95a8dd5241c0ee0def6 # 6.0.2
         id: diff
         with:
           sources: home-kubernetes
